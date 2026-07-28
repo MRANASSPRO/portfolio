@@ -6,6 +6,9 @@
 .cache
 dist
 
+# Vercel local build output / linked-project metadata
+.vercel
+
 # Node dependencies
 node_modules
 
@@ -25,3 +28,7 @@ logs
 
 # VSC
 .history
+
+# Local tooling output (contains absolute paths from this machine)
+graphify-out
+.claude/settings.local.json

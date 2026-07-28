@@ -19,49 +19,24 @@ useSeoMeta({
   description: 'We are sorry but this page could not be found.'
 })
 
-const [{ data: navigation }, { data: files }] = await Promise.all([
-  useAsyncData('navigation', () => {
-    return Promise.all([
-      queryCollectionNavigation('blog')
-    ])
-  }, {
-    transform: data => data.flat()
-  }),
-  useLazyAsyncData('search', () => {
-    return Promise.all([
-      queryCollectionSearchSections('blog')
-    ])
-  }, {
-    server: false,
-    transform: data => data.flat()
-  })
-])
+const { data: page } = await useAsyncData('error-name', () =>
+  queryCollection('index').first()
+)
 </script>
 
 <template>
-  <div>
-    <AppHeader :links="navLinks" />
+  <div class="flex flex-col min-h-screen">
+    <AppHeader
+      :links="navLinks"
+      :name="page?.hero.name ?? ''"
+    />
 
-    <UMain>
-      <UContainer>
-        <UPage>
-          <UError :error="error" />
-        </UPage>
-      </UContainer>
-    </UMain>
+    <main
+      class="flex-1 mx-auto px-[var(--px-fluid-sm)] md:px-[var(--px-fluid-md)] py-16 w-full max-w-[1450px]"
+    >
+      <UError :error="error" />
+    </main>
 
     <AppFooter />
-
-    <ClientOnly>
-      <LazyUContentSearch
-        :files="files"
-        shortcut="meta_k"
-        :navigation="navigation"
-        :links="navLinks"
-        :fuse="{ resultLimit: 42 }"
-      />
-    </ClientOnly>
-
-    <UToaster />
   </div>
 </template>

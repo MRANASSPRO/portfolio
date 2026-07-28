@@ -1,12 +1,22 @@
 <script setup lang="ts">
+const { data: page } = await useAsyncData('layout-name', () =>
+  queryCollection('index').first()
+)
 </script>
 
 <template>
-  <div>
-    <UContainer class="sm:border-x border-default pt-10">
-      <AppHeader :links="navLinks" />
+  <div class="flex flex-col min-h-screen">
+    <AppHeader
+      :links="navLinks"
+      :name="page?.hero.name ?? ''"
+    />
+
+    <main
+      class="flex-1 mx-auto px-[var(--px-fluid-sm)] md:px-[var(--px-fluid-md)] w-full max-w-[1450px]"
+    >
       <slot />
-      <AppFooter />
-    </UContainer>
+    </main>
+
+    <AppFooter />
   </div>
 </template>

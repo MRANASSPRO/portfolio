@@ -3,22 +3,22 @@ const { footer } = useAppConfig()
 </script>
 
 <template>
-  <UFooter
-    class="z-10 bg-default"
-    :ui="{ left: 'text-muted text-xs' }"
-  >
-    <template #left>
-      {{ footer.credits }}
-    </template>
+  <footer class="border-t border-default">
+    <div
+      class="flex sm:flex-row flex-col justify-between items-center gap-4 mx-auto px-[var(--px-fluid-sm)] md:px-[var(--px-fluid-md)] py-6 max-w-[1450px]"
+    >
+      <p class="text-muted text-sm">
+        {{ footer.credits }}
+      </p>
 
-    <template #right>
-      <template v-if="footer?.links">
+      <div class="flex gap-1">
         <UButton
           v-for="(link, index) of footer?.links"
           :key="index"
-          v-bind="{ size: 'xs', color: 'neutral', variant: 'ghost', ...link }"
+          v-bind="{ size: 'sm', color: 'neutral', variant: 'ghost', ...link }"
+          class="rounded-full"
         />
-      </template>
-    </template>
-  </UFooter>
+      </div>
+    </div>
+  </footer>
 </template>

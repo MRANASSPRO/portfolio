@@ -1,6 +1,16 @@
 name: ci
 
-on: push
+# Runs on every branch push, and on pull requests targeting main.
+# Vercel handles deployment separately — this workflow only checks quality.
+on:
+  push:
+  pull_request:
+    branches: [main]
+
+# If you push twice quickly, cancel the older run instead of paying for both.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   ci:
@@ -25,10 +35,14 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Lint
         run: pnpm run lint
 
       - name: Typecheck
         run: pnpm run typecheck
+
+      # Catches build-time failures here rather than at deploy time.
+      - name: Build
+        run: pnpm run build

@@ -1,11 +1,6 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
-const createBaseSchema = () => z.object({
-  title: z.string(),
-  description: z.string()
-})
-
-const createButtonSchema = () => z.object({
+const createLinkSchema = () => z.object({
   label: z.string(),
   icon: z.string().optional(),
   to: z.string().optional(),
@@ -20,20 +15,6 @@ const createImageSchema = () => z.object({
   alt: z.string()
 })
 
-const createAuthorSchema = () => z.object({
-  name: z.string(),
-  description: z.string().optional(),
-  username: z.string().optional(),
-  twitter: z.string().optional(),
-  to: z.string().optional(),
-  avatar: createImageSchema().optional()
-})
-
-const createTestimonialSchema = () => z.object({
-  quote: z.string(),
-  author: createAuthorSchema()
-})
-
 export default defineContentConfig({
   collections: {
     index: defineCollection({
@@ -41,90 +22,73 @@ export default defineContentConfig({
       source: 'index.yml',
       schema: z.object({
         hero: z.object({
-          links: z.array(createButtonSchema()),
-          images: z.array(createImageSchema())
+          name: z.string(),
+          role: z.string(),
+          description: z.string(),
+          image: createImageSchema(),
+          links: z.array(createLinkSchema()),
+          socials: z.array(createLinkSchema())
         }),
-        about: createBaseSchema(),
-        experience: createBaseSchema().extend({
+        about: z.object({
+          title: z.string(),
+          paragraphs: z.array(z.string()),
+          location: z.string(),
+          email: z.string(),
+          availability: z.string()
+        }),
+        experience: z.object({
+          title: z.string(),
           items: z.array(z.object({
-            date: z.date(),
             position: z.string(),
-            company: z.object({
-              name: z.string(),
-              url: z.string(),
-              logo: z.string().editor({ input: 'icon' }),
-              color: z.string()
-            })
+            company: z.string(),
+            date: z.string(),
+            achievements: z.array(z.string()),
+            tech: z.string().optional()
           }))
         }),
-        testimonials: z.array(createTestimonialSchema()),
-        blog: createBaseSchema(),
-        faq: createBaseSchema().extend({
-          categories: z.array(
-            z.object({
-              title: z.string().nonempty(),
-              questions: z.array(
-                z.object({
-                  label: z.string().nonempty(),
-                  content: z.string().nonempty()
-                })
-              )
-            }))
-        })
-      })
-    }),
-    projects: defineCollection({
-      type: 'data',
-      source: 'projects/*.yml',
-      schema: z.object({
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
-        tags: z.array(z.string()),
-        date: z.date()
-      })
-    }),
-    blog: defineCollection({
-      type: 'page',
-      source: 'blog/*.md',
-      schema: z.object({
-        minRead: z.number(),
-        date: z.date(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        author: createAuthorSchema()
-      })
-    }),
-    pages: defineCollection({
-      type: 'page',
-      source: [
-        { include: 'projects.yml' },
-        { include: 'blog.yml' }
-      ],
-      schema: z.object({
-        links: z.array(createButtonSchema())
-      })
-    }),
-    speaking: defineCollection({
-      type: 'page',
-      source: 'speaking.yml',
-      schema: z.object({
-        links: z.array(createButtonSchema()),
-        events: z.array(z.object({
-          category: z.enum(['Live talk', 'Podcast', 'Conference']),
+        skills: z.object({
           title: z.string(),
-          date: z.date(),
-          location: z.string(),
-          url: z.string().optional()
-        }))
-      })
-    }),
-    about: defineCollection({
-      type: 'page',
-      source: 'about.yml',
-      schema: z.object({
-        content: z.object({}),
-        images: z.array(createImageSchema())
+          tabs: z.array(z.object({
+            label: z.string(),
+            categories: z.array(z.object({
+              name: z.string(),
+              items: z.array(z.string())
+            }))
+          }))
+        }),
+        projects: z.object({
+          title: z.string(),
+          items: z.array(z.object({
+            title: z.string(),
+            description: z.string(),
+            image: createImageSchema(),
+            tags: z.array(z.string()),
+            links: z.array(createLinkSchema())
+          }))
+        }),
+        education: z.object({
+          title: z.string(),
+          items: z.array(z.object({
+            degree: z.string(),
+            school: z.string(),
+            date: z.string(),
+            description: z.string().optional()
+          }))
+        }),
+        certifications: z.object({
+          title: z.string(),
+          items: z.array(z.object({
+            name: z.string(),
+            date: z.string()
+          }))
+        }),
+        contact: z.object({
+          title: z.string(),
+          description: z.string(),
+          email: z.string(),
+          phone: z.string().optional(),
+          links: z.array(createLinkSchema())
+        })
       })
     })
   }

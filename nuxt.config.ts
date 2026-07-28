@@ -22,6 +22,17 @@ export default defineNuxtConfig({
     }
   },
 
+  routeRules: {
+    // robots.txt is only advisory; this header is what actually keeps the CV
+    // out of search indexes even if someone links to it directly.
+    '/anass-radi-cv.pdf': {
+      headers: { 'X-Robots-Tag': 'noindex, noarchive, noimageindex' }
+    },
+    '/hero/**': {
+      headers: { 'X-Robots-Tag': 'noimageindex' }
+    }
+  },
+
   compatibilityDate: '2026-06-30',
 
   nitro: {

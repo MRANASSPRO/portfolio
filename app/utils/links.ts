@@ -1,23 +1,13 @@
-import type { NavigationMenuItem } from '@nuxt/ui'
+export interface AnchorLink {
+  label: string
+  to: string
+}
 
-export const navLinks: NavigationMenuItem[] = [{
-  label: 'Home',
-  icon: 'i-lucide-home',
-  to: '/'
-}, {
-  label: 'Projects',
-  icon: 'i-lucide-folder',
-  to: '/projects'
-}, {
-  label: 'Blog',
-  icon: 'i-lucide-file-text',
-  to: '/blog'
-}, {
-  label: 'Speaking',
-  icon: 'i-lucide-mic',
-  to: '/speaking'
-}, {
-  label: 'About',
-  icon: 'i-lucide-user',
-  to: '/about'
-}]
+export const navLinks: AnchorLink[] = [
+  { label: 'About', to: '#about' },
+  { label: 'Experience', to: '#experience' },
+  { label: 'Skills', to: '#skills' },
+  { label: 'Projects', to: '#projects' },
+  { label: 'Education', to: '#education' },
+  { label: 'Contact', to: '#contact' }
+]

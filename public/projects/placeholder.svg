@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Project screenshot placeholder">
+  <style>
+    /* Referenced via &lt;img&gt;, this SVG still honours the viewer's colour scheme. */
+    .bg   { fill: #f1f5f9; }
+    .line { stroke: #94a3b8; }
+    .fill { fill: #94a3b8; }
+    @media (prefers-color-scheme: dark) {
+      .bg   { fill: #1e293b; }
+      .line { stroke: #64748b; }
+      .fill { fill: #64748b; }
+    }
+  </style>
+
+  <rect class="bg" width="640" height="360"/>
+
+  <!-- Faint grid, keeps the empty card from reading as a broken image. -->
+  <g class="line" opacity="0.18" stroke-width="1">
+    <path d="M0 90h640M0 180h640M0 270h640"/>
+    <path d="M160 0v360M320 0v360M480 0v360"/>
+  </g>
+
+  <!-- Centred image glyph. -->
+  <g transform="translate(320 180)">
+    <rect class="line" x="-56" y="-40" width="112" height="80" rx="8"
+          fill="none" stroke-width="3" opacity="0.75"/>
+    <circle class="fill" cx="-24" cy="-14" r="9" opacity="0.75"/>
+    <path class="line" d="M-52 26l32-30 22 20 18-14 28 24" fill="none"
+          stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+  </g>
+</svg>

@@ -4,12 +4,23 @@
 @source "../../../content/**/*";
 
 @theme static {
-  --font-sans: 'Public Sans', sans-serif;
-  --font-serif: 'Instrument Serif', serif;
+  /* System font stack. */
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Extra breakpoints used by the fluid padding scale below. */
+  --breakpoint-xs: 320px;
+  --breakpoint-3xl: 1920px;
+
+  /* Fluid horizontal padding: grows with the viewport, then caps out. */
+  --px-fluid-sm: clamp(8px, 6vw, 80px);
+  --px-fluid-md: clamp(16px, 8vw, 160px);
+  --px-fluid-lg: clamp(24px, 9vw, 240px);
 }
 
 :root {
-  --ui-container: var(--container-4xl);
+  --ui-radius: 0.25rem;
+  --ui-container: var(--container-7xl);
 
   ::selection {
     color: #282a30;
@@ -22,4 +33,13 @@
     color: #ffffff;
     background-color: #474747;
   }
+}
+
+/* Offset anchor scrolling so section headings clear the sticky header. */
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 4.5rem;
 }

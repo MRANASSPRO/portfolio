@@ -1,120 +1,357 @@
+title: Anass Radi
+description: Senior Mobile & Backend Developer specializing in Android, Kotlin, Flutter and Kotlin Multiplatform, expanding into backend and cloud with Java, Ktor, AWS and CI/CD.
 seo:
-  title: "Emma Thompson - UX/UI Designer"
-  description: "Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional."
-title: "Hey, I'm Emma Thompson UX/UI Designer"
-description: "I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity."
+  title: Anass Radi - Senior Mobile & Backend Developer
+  description: Senior Mobile Developer based in Germany. 5+ years building production Android apps with Kotlin and Jetpack Compose, expanding into Flutter, Kotlin Multiplatform, and backend/cloud with Java, Ktor, and AWS.
+
 hero:
+  name: Anass Radi
+  role: Senior Software Developer
+  description: >-
+    Senior Mobile Developer with 5+ years of experience building and scaling production
+    Android and Flutter applications, now extending into Kotlin Multiplatform, and backend
+    systems with Spring Boot, Ktor and AWS Cloud.
+  image:
+    src: /hero/anass-radi.png
+    alt: Anass Radi
   links:
-    - label: "Use this template"
-      to: https://github.com/nuxt-ui-templates/portfolio
-      color: "neutral"
-  images:
-    - src: /hero/random-1.avif
-      alt: Random Image 1
-    - src: /hero/random-2.avif
-      alt: Random Image 2
-    - src: /hero/random-3.avif
-      alt: Random Image 3
-    - src: /hero/random-4.avif
-      alt: Random Image 4
-    - src: /hero/random-5.avif
-      alt: Random Image 5
-    - src: /hero/random-6.avif
-      alt: Random Image 6
-    - src: /hero/random-7.avif
-      alt: Random Image 7
-    - src: /hero/random-8.avif
-      alt: Random Image 8
-    - src: /hero/random-9.avif
-      alt: Random Image 9
+    - label: Contact Me
+      to: '#contact'
+      color: neutral
+    - label: View Projects
+      to: '#projects'
+      color: neutral
+      variant: outline
+  socials:
+    - label: GitHub
+      icon: i-simple-icons-github
+      to: https://github.com/MRANASSPRO
+      target: _blank
+    - label: LinkedIn
+      icon: i-simple-icons-linkedin
+      to: https://www.linkedin.com/in/anass-radi1
+      target: _blank
+    - label: Email
+      icon: i-lucide-mail
+      to: mailto:mranass.deu@gmail.com
+
 about:
-  title: "About Me"
-  description: |
-    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
-    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+  title: About Me
+  paragraphs:
+    - >-
+      As a Senior Mobile Developer, I'm driven by building robust, high-performance
+      Android applications. Across 5+ years I've led and contributed to multiple
+      production projects, consistently taking ownership of architectural decisions and
+      applying clean architecture and clean code principles to deliver scalable,
+      maintainable mobile solutions.
+    - >-
+      My journey started with Java and J2EE backend work before I moved fully into
+      Android, where I've shipped everything from a cloud-connected offline-first POS
+      system with integrated payments, to AR-powered interior design apps with BLE color
+      sensors, to a large-scale B2B e-commerce platform. Along the way I picked up
+      Flutter for cross-platform delivery, and I'm now working with Kotlin Multiplatform
+      to share business logic across targets.
+    - >-
+      My interests go well beyond the mobile client. I build APIs with Java, Spring Boot,
+      Ktor and ASP.NET Core, design GraphQL schemas, and I'm deepening my AWS Cloud and
+      CI/CD expertise across GitHub Actions, Azure Pipelines and Bitrise. I genuinely
+      enjoy owning a feature end-to-end, from the Compose UI down to the service and
+      pipeline that ships it.
+  location: Mönchengladbach, Germany
+  email: mranass.deu@gmail.com
+  availability: Full-time, Hybrid or Remote
+
 experience:
   title: Work Experience
   items:
-    - position: "Brand Designer at"
-      date: "2023 - Present"
-      company:
-        name: Nuxt
-        logo: "i-simple-icons-nuxtdotjs"
-        url: "https://nuxt.com"
-        color: "#00DC82"
-    - position: "Assets Designer at"
-      date: "2022 - 2023"
-      company:
-        name: Raycast
-        logo: "i-simple-icons-raycast"
-        url: "https://raycast.com"
-        color: "#FF6363"
-    - position: "Senior UX/UI Designer at"
-      date: "2020 - 2021"
-      company:
-        name: Linear
-        logo: "i-simple-icons-linear"
-        url: "https://linear.app"
-        color: "#5E6AD2"
-testimonials:
-  - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
-    author:
-      name: 'Sarah Chen'
-      description: 'Product Director at Bloom Finance'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Working with Emma was the best decision we made for our startup. She didn't just deliver designs—she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless."
-    author:
-      name: 'Michael Rodriguez'
-      description: 'Co-founder of Wavelength Music'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed."
-    author:
-      name: 'Dr. Aisha Johnson'
-      description: 'Chief Innovation Officer at GreenTech Solutions'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-blog:
-  title: "Latest Articles"
-  description: "Some of my recent thoughts"
-faq:
-  title: Frequently Asked Questions
-  description: Answers to common questions about my process and services.
-  categories:
-    - title: Services & Process
-      questions:
-        - label: What services do you offer?
-          content: |
-            I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
-        - label: What is your design process like?
-          content: |
-            My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
-        - label: Do you work with startups?
-          content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
-    - title: Pricing & Timelines
-      questions:
-        - label: How much does a project typically cost?
-          content: |
-            Project costs vary based on scope, complexity, features, and timeline. For comprehensive UX/UI design and front-end development projects, my engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000. For consulting or specific design tasks, my day rate is $700.
-        - label: What are your payment terms?
-          content: |
-            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments via bank transfer and Stripe.
-        - label: How long does a typical project take?
-          content: |
-            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 3-4 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed timeline estimate after the initial discovery phase.
-        - label: Do you offer retainers or ongoing support?
-          content: |
-            Yes, for clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to specific needs. Let's discuss if this is something you're interested in.
-    - title: About Me
-      questions:
-        - label: What do you enjoy most about your work?
-          content: |
-            I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
-        - label: What are your hobbies outside of work?
-          content: |
-            When I'm not designing or coding, I enjoy exploring Boston's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
+    - position: Senior Android Developer / C# Developer
+      company: GastroSoft GmbH — Krefeld, Germany
+      date: Jan 2025 - Jan 2026
+      achievements:
+        - Led the full development lifecycle of a modern cloud-connected mobile POS solution for Android.
+        - Designed an offline-first architecture with automated database backups, keeping the app fully operational without connectivity.
+        - Integrated payment processing and thermal receipt printing into the point-of-sale flow.
+        - Implemented C# APIs using ASP.NET Core and EF Core to serve the mobile frontends.
+        - Designed GraphQL schemas with HotChocolate and optimized database design.
+      tech: Kotlin, Jetpack Compose, MVVM, Room, Coroutines, Dagger Hilt, Firebase, Crashlytics, Git, Azure Pipelines, C#, ASP.NET Core, EF Core, GraphQL
+    - position: Android Developer
+      company: Veeuze GmbH — Hybrid / Wesel, Germany
+      date: Mar 2022 - Sep 2024
+      achievements:
+        - Architected and maintained specialized Android applications for the interior design domain.
+        - Migrated old codebases gradually to Kotlin with Jetpack Compose, instead of Java and XML-based views.
+        - Leveraged ARCore and 3D visualization to let users preview designs in their own space.
+        - Integrated multiple BLE-based color sensor devices, enabling real-time color scanning of walls and objects.
+        - Leveraged Google Maps API for location-based features in some customer apps.
+        - Implemented UI and unit tests to raise and protect codebase quality.
+        - Integrated user tracking solutions for better user management.
+        - Implemented Firebase services and Crashlytics for app analytics and crash reporting
+      tech: Java, Kotlin, MVVM, Jetpack Compose, Bluetooth BLE, REST APIs, Retrofit, ARCore, 3D/AR, Navigation Component, Coroutines, Gradle, Espresso/JUnit, Git
+    - position: Android Developer
+      company: Chari.ma — Tanger, Morocco
+      date: Oct 2020 - Dec 2021
+      achievements:
+        - Developed and fully redesigned a large-scale B2B e-commerce app for consumer goods.
+        - Built a dynamic product catalog and a configurable offers banner system.
+        - Built a customized delivery tracking application with Google Maps API integration for real-time driver navigation.
+        - Implemented package management and administrative monitoring dashboards.
+      tech: Java, Kotlin, MVP, MVVM, Retrofit, Google Maps, REST APIs, Flutter, Git
+    - position: Junior Java J2EE Developer
+      company: VirtuoCode — Remote / Tanger, Morocco
+      date: Feb 2020 - Jul 2020
+      achievements:
+        - Developed a SaaS platform for business model evaluation and strategic support for startups.
+        - Built features for managing and tracking advertising campaigns.
+      tech: Java, Spring Boot, MVC, Hibernate, MongoDB, Docker, JavaScript
+
+skills:
+  title: Skills
+  tabs:
+    - label: Technical
+      categories:
+        - name: Mobile
+          items:
+            - Android SDK
+            - Kotlin
+            - Java
+            - Jetpack Compose
+            - Coroutines / Flow
+            - MVVM
+            - Material 3
+            - Retrofit
+            - Room
+            - Dagger Hilt
+            - Koin
+            - Flutter
+            - Compose Multiplatform
+        - name: Backend & DB
+          items:
+            - REST API
+            - Ktor
+            - ASP.NET Core
+            - Entity Framework Core
+            - REST API
+            - GraphQL
+            - MongoDB
+            - Firebase
+            - SQL
+        - name: Frontend
+          items:
+            - JavaScript
+            - TypeScript
+            - HTML5
+            - CSS3
+            - Tailwind CSS
+            - Nuxt.js / Vue.js
+        - name: Agentic AI
+          items:
+            - Claude Code
+            - Cursor
+            - GitHub Copilot
+        - name: Other
+          items:
+            - Unit Testing
+            - Espresso
+            - Responsive Design
+            - SEO
+            - Accessibility        
+    - label: Soft Skills
+      categories:
+        - name: Communication/Leadership
+          items:
+            - Technical Decision-Making
+            - Feature Ownership
+            - Consistent Feedback
+            - German (Fluent with C1)
+            - English (Fluent with C2)
+        - name: Collaboration
+          items:
+            - Project Management
+            - Agile Methodologies
+            - Active Communication
+            - Time Management
+            - Mentoring
+            - Code review
+            - Presentation Skills
+    - label: Tools & Platforms
+      categories:
+        - name: Workspace
+          items:
+            - Android Studio
+            - IntelliJ IDEA
+            - VSCode / Cursor
+            - Jira
+            - Postman
+            - Figma
+            - Slack
+            - Git / GitHub
+
+projects:
+  title: Projects
+  items:
+    - title: CryptoBlink
+      description: >-
+        An Android app for exploring the crypto market: browse top coins by rank, track
+        live crypto prices, and open any coin for its project description, category tags and
+        the team members behind it. Built on Clean Architecture with a Jetpack Compose UI
+        over the CoinPaprika API.
+      image:
+        src: /projects/placeholder.svg
+        alt: CryptoBlink Android app
+      tags:
+        - Kotlin
+        - Jetpack Compose
+        - Clean Architecture
+        - MVVM
+        - Hilt
+        - Retrofit
+        - REST API
+      links:
+        - label: GitHub
+          icon: i-simple-icons-github
+          to: https://github.com/MRANASSPRO/CryptoBlink
+          target: _blank
+    - title: JWT Auth API with Ktor
+      description: >-
+        A secure REST API demonstrating a full JWT authentication flow in Ktor: user
+        registration, login issuing HMAC256-signed tokens with a one-hour expiry, and
+        protected routes that verify each token's signature, issuer and audience
+        automatically.
+      image:
+        src: /projects/placeholder.svg
+        alt: JWT authentication REST API built with Ktor
+      tags:
+        - Kotlin
+        - Ktor
+        - JWT
+        - REST API
+        - Kotlinx Serialization
+        - Java 21
+      links:
+        - label: GitHub
+          icon: i-simple-icons-github
+          to: https://github.com/MRANASSPRO/Jwt-Ktor
+          target: _blank
+    - title: E-Commerce Demo — Kotlin Multiplatform
+      description: >-
+        A production-ready Kotlin Multiplatform sample sharing both business logic and UI
+        across Android, iOS and Web. Product list and detail screens are rendered with
+        Compose Multiplatform and driven by an MVI state pattern, with Ktor handling the
+        REST API and Koin providing dependency injection.
+      image:
+        src: /projects/placeholder.svg
+        alt: Kotlin Multiplatform e-commerce demo app
+      tags:
+        - Kotlin Multiplatform
+        - Compose Multiplatform
+        - MVI
+        - Koin
+        - Ktor
+        - Coroutines / Flow
+      links:
+        - label: GitHub
+          icon: i-simple-icons-github
+          to: https://github.com/MRANASSPRO/EcommerceDemoKMP
+          target: _blank
+    - title: GitHub Users Search
+      description: >-
+        A Flutter app for exploring GitHub: search users with paginated results from the
+        GitHub REST API, then open any profile to browse that developer's public
+        repositories in a single tap.
+      image:
+        src: /projects/placeholder.svg
+        alt: GitHub users search Flutter app
+      tags:
+        - Flutter
+        - Dart
+        - REST API
+        - GitHub API
+        - Pagination
+      links:
+        - label: GitHub
+          icon: i-simple-icons-github
+          to: https://github.com/MRANASSPRO/github_users_search
+          target: _blank
+    - title: Decentralised Survey dApp
+      description: >-
+        A decentralised web application for running surveys on the Ethereum blockchain,
+        with results recorded immutably via smart contracts.
+      image:
+        src: /projects/placeholder.svg
+        alt: Ethereum Survey dApp
+      tags:
+        - Solidity
+        - Ethereum
+        - Truffle
+        - React
+        - Web3.js
+      links:
+        - label: GitHub
+          icon: i-simple-icons-github
+          to: https://github.com/MRANASSPRO
+          target: _blank
+    - title: Smart Embedded Alarm System
+      description: >-
+        An Arduino-based motion detection alarm that pushes real-time notifications to a
+        mobile device over WiFi through a cloud relay.
+      image:
+        src: /projects/placeholder.svg
+        alt: Arduino Smart Alarm System
+      tags:
+        - C
+        - Arduino
+        - ESP8266
+        - ThingSpeak
+      links:
+        - label: GitHub
+          icon: i-simple-icons-github
+          to: https://github.com/MRANASSPRO
+          target: _blank
+
+education:
+  title: Education
+  items:
+    - degree: Master of Science — Computer and Mobile Systems
+      school: Faculty of Science and Technology, Abdelmalek Essaâdi University
+      date: Sep 2018 - Jul 2020
+      description: Two-year master's program with focus areas in Mobile & Cloud Systems.
+    - degree: Bachelor of Science — Mathematics and Computer Science
+      school: Faculty of Science and Technology, Abdelmalek Essaâdi University
+      date: Sep 2014 - Jul 2018
+      description: Four-year bachelor's degree with focus areas in OOP, Linux and databases.
+
+certifications:
+  title: Certifications
+  items:
+    - name: AWS Certified DevOps Engineer — Professional (Course)
+      date: Jul 2026
+    - name: AWS Certified Developer — Associate
+      date: Jul 2026
+    - name: Google AI Professional Certificate
+      date: Mar 2026
+    - name: IBM Cloud Application Developer
+      date: Sep 2020
+    - name: DevOps Essentials Professional Certificate
+      date: Jul 2020
+    - name: 'EF SET English Certificate: C2 Level'
+      date: May 2020
+    - name: IoT Cloud Developer Mastery Award
+      date: Oct 2019
+    - name: IBM Application Security Engineer Mastery Award
+      date: May 2019
+
+contact:
+  title: Contact
+  description: >-
+    I'm open to senior mobile and full-stack roles, and always happy to talk about
+    Android, Kotlin, Flutter, KMP or backend and cloud work. Feel free to reach out.
+  email: mranass.deu@gmail.com
+  links:
+    - label: GitHub
+      icon: i-simple-icons-github
+      to: https://github.com/MRANASSPRO
+      target: _blank
+    - label: LinkedIn
+      icon: i-simple-icons-linkedin
+      to: https://www.linkedin.com/in/anass-radi1
+      target: _blank
