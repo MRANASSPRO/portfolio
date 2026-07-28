@@ -44,5 +44,9 @@ jobs:
         run: pnpm run typecheck
 
       # Catches build-time failures here rather than at deploy time.
+      # The build peaks around 3.5 GB, which exceeds Node's default heap limit
+      # on a 7 GB runner, so raise it explicitly to avoid an OOM (exit 134).
       - name: Build
         run: pnpm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
