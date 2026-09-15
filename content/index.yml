@@ -8,9 +8,10 @@ hero:
   name: Anass Radi
   role: Senior Software Developer
   description: >-
-    Senior Mobile Developer with 5+ years of experience building and scaling production
-    Android and Flutter applications, now extending into Kotlin Multiplatform, and backend
-    systems with Spring Boot, Ktor and AWS Cloud.
+    Mobile App Developer with several years of experience in software engineering, focused on Android/Kotlin, Flutter, and backend systems.
+    Responsible for technical decision-making, migrating Java and legacy stacks, and building robust, scalable solutions based on Clean Architecture,
+    from concept through to product release.
+    Currently deepening expertise in backend systems, DevOps, and AWS Cloud.
   image:
     src: /hero/anass-radi.png
     alt: Anass Radi
@@ -128,9 +129,9 @@ skills:
           items:
             - REST API
             - Ktor
+            - Spring Boot
             - ASP.NET Core
             - Entity Framework Core
-            - REST API
             - GraphQL
             - MongoDB
             - Firebase
