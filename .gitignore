@@ -32,3 +32,6 @@ logs
 # Local tooling output (contains absolute paths from this machine)
 graphify-out
 .claude/settings.local.json
+
+# Markdown documentation
+*.md

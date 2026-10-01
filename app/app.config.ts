@@ -6,7 +6,7 @@ export default defineAppConfig({
       alt: 'Anass Radi'
     },
     email: 'mranass.deu@gmail.com',
-    resume: '/anass-radi-cv.pdf',
+    resume: '/Anass_Radi_CV.pdf',
     available: true
   },
   ui: {

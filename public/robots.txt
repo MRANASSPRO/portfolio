@@ -3,6 +3,7 @@ Allow: /
 
 # Keep the CV PDF out of search results. It stays downloadable from the site,
 # it just shouldn't surface as a standalone hit in Google/Bing.
+Disallow: /Anass_Radi_CV.pdf
 Disallow: /anass-radi-cv.pdf
 
 # Opt out of the common AI training / scraping crawlers.

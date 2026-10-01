@@ -24,9 +24,11 @@ export default defineNuxtConfig({
 
   routeRules: {
     // robots.txt is only advisory; this header is what actually keeps the CV
-    // out of search indexes even if someone links to it directly.
-    '/anass-radi-cv.pdf': {
+    '/Anass_Radi_CV.pdf': {
       headers: { 'X-Robots-Tag': 'noindex, noarchive, noimageindex' }
+    },
+    '/anass-radi-cv.pdf': {
+      redirect: { to: '/Anass_Radi_CV.pdf', statusCode: 301 }
     },
     '/hero/**': {
       headers: { 'X-Robots-Tag': 'noimageindex' }
